@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chrono Exchange</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>⏳ Chrono Exchange</h1>
+
+    <div class="balance">
+        Balance: <span id="coins">0</span> Coins
+    </div>
+
+    <!-- OFFER SERVICE -->
+    <section>
+        <h2>Earn Coins (Offer Service)</h2>
+        <input type="text" id="offerService" placeholder="e.g. Teaching, Dog Walking">
+        <input type="number" id="offerHours" placeholder="Hours">
+        <button onclick="earnCoins()">Earn Coins</button>
+    </section>
+
+    <!-- REQUEST SERVICE -->
+    <section>
+        <h2>Spend Coins (Request Service)</h2>
+        <input type="text" id="requestService" placeholder="e.g. Cooking, Cleaning">
+        <input type="number" id="requestHours" placeholder="Hours">
+        <button onclick="spendCoins()">Spend Coins</button>
+    </section>
+
+    <!-- HISTORY -->
+    <section>
+        <h2>Transaction History</h2>
+        <ul id="history"></ul>
+    </section>
+
+    <!-- CLEAR -->
+    <button class="danger" onclick="resetApp()">Reset App</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
